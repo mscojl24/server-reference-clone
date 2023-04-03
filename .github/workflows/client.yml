@@ -29,4 +29,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://fe-19-mscojl24-s3 \
             --delete
-        working-directory: ./server-reference-clone
+        working-directory: ./my-agora-states-client
