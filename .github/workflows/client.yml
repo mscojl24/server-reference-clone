@@ -3,7 +3,7 @@ name: client
 on:
   push:
     branches:
-      - <?>
+      - reference
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -27,6 +27,6 @@ jobs:
         run: |
           aws s3 sync \
             --region ap-northeast-2 \
-            build s3://<?> \
+            build s3://fe-19-mscojl24-s3 \
             --delete
         working-directory: ./server-reference-clone
